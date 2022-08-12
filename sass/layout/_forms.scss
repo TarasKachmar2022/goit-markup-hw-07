@@ -19,10 +19,14 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
-.register-form__wrap:last-child {
-    margin-bottom: 0;
+.register-form__wrap {
+    position: relative;
 }
 
 .register-form__label {
@@ -49,10 +53,6 @@
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-}
-
-.register-form__wrap {
-    position: relative;
 }
 
 .register-form__input:hover,

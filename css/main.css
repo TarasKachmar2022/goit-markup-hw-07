@@ -155,7 +155,7 @@ body {
   transition: transform var(--anim-fast) var(--transition-func), -webkit-transform var(--anim-fast) var(--transition-func);
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden modal {
   -webkit-transform: translate(-50%, -50%) scale(0) rotate(90deg);
           transform: translate(-50%, -50%) scale(0) rotate(90deg);
 }
@@ -183,9 +183,7 @@ body {
   -webkit-transition: fill var(--anim-fast) var(--transition-func);
   transition: fill var(--anim-fast) var(--transition-func);
 }
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close-btn:hover, .modal-close-btn:focus {
   fill: var(--accent-color);
 }
 
@@ -199,12 +197,12 @@ body {
   text-decoration: none;
 }
 
-.header-logo {
-  margin-right: 93px;
-}
-
 .logo__text {
   color: var(--logo-text-color-black);
+}
+
+.header-logo {
+  margin-right: 93px;
 }
 
 .nav {
@@ -232,9 +230,7 @@ body {
   -webkit-transition: color, var(--anim-fast) var(--transition-func);
   transition: color, var(--anim-fast) var(--transition-func);
 }
-
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: var(--accent-color);
 }
 
@@ -242,7 +238,6 @@ body {
   position: relative;
   color: var(--accent-color);
 }
-
 .nav__link--current::after {
   position: absolute;
   left: 0;
@@ -273,9 +268,7 @@ body {
   -webkit-transition: color, var(--anim-fast) var(--transition-func);
   transition: color, var(--anim-fast) var(--transition-func);
 }
-
-.contact__link:hover,
-.contact__link:focus {
+.contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
 }
 
@@ -319,9 +312,7 @@ body {
   -webkit-transition: background-color var(--anim-fast) var(--transition-func);
   transition: background-color var(--anim-fast) var(--transition-func);
 }
-
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:hover, .hero-btn:focus {
   background-color: var(--accent-color-hover-btn);
 }
 
@@ -355,21 +346,17 @@ body {
   -webkit-transition: background-color var(--anim-fast) var(--transition-func);
   transition: background-color var(--anim-fast) var(--transition-func);
 }
+.social__link:hover, .social__link:focus {
+  background-color: var(--accent-color);
+}
+.social__link:hover .social__icon, .social__link:focus .social__icon {
+  fill: var(--icon-color-white);
+}
 
 .social__icon {
   fill: var(--icon-color-grey);
   -webkit-transition: fill var(--anim-fast) var(--transition-func);
   transition: fill var(--anim-fast) var(--transition-func);
-}
-
-.social__link:hover,
-.social__link:focus {
-  background-color: var(--accent-color);
-}
-
-.social__link:hover .social__icon,
-.social__link:focus .social__icon {
-  fill: var(--icon-color-white);
 }
 
 .filter-list {
@@ -400,9 +387,7 @@ body {
   transition: color var(--anim-fast) var(--transition-func), background-color var(--anim-fast) var(--transition-func), box-shadow var(--anim-fast) var(--transition-func);
   transition: color var(--anim-fast) var(--transition-func), background-color var(--anim-fast) var(--transition-func), box-shadow var(--anim-fast) var(--transition-func), -webkit-box-shadow var(--anim-fast) var(--transition-func);
 }
-
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-btn:hover, .filter-btn:focus {
   color: var(--text-color-white);
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
@@ -574,9 +559,7 @@ body {
   -webkit-transition: fill var(--anim-fast) var(--transition-func), border var(--anim-fast) var(--transition-func);
   transition: fill var(--anim-fast) var(--transition-func), border var(--anim-fast) var(--transition-func);
 }
-
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -612,9 +595,7 @@ body {
   -webkit-transition: var(--anim-fast) var(--transition-func);
   transition: var(--anim-fast) var(--transition-func);
 }
-
-.footer__link:hover,
-.footer__link:focus {
+.footer__link:hover, .footer__link:focus {
   color: var(--accent-color);
 }
 
@@ -672,23 +653,18 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
-
 .footer-subscribe__input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-subscribe__input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-subscribe__input:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-subscribe__input::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-subscribe__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -733,11 +709,13 @@ body {
   transition: box-shadow var(--anim-fast) cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow var(--anim-fast) cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow var(--anim-fast) cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-list__link:hover,
-.portfolio-list__link:focus {
+.portfolio-list__link:hover, .portfolio-list__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-list__link:hover .overlay, .portfolio-list__link:focus .overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .portfolio-list__title {
@@ -750,12 +728,6 @@ body {
 .portfolio-list__descr {
   font-size: 16px;
   line-height: 1.87;
-}
-
-.portfolio-list__link:hover .overlay,
-.portfolio-list__link:focus .overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .overlay {
@@ -807,9 +779,12 @@ body {
           flex-direction: column;
   margin-bottom: 10px;
 }
-
 .register-form__wrap:last-child {
   margin-bottom: 0;
+}
+
+.register-form__wrap {
+  position: relative;
 }
 
 .register-form__label {
@@ -865,10 +840,6 @@ body {
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.register-form__wrap {
-  position: relative;
 }
 
 .register-form__input:hover,

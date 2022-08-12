@@ -11,8 +11,7 @@
     transform: translate(-50%, -50%);
     transition: transform var(--anim-fast) var(--transition-func);
 }
-
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden modal {
     transform: translate(-50%, -50%) scale(0) rotate(90deg);
 }
 
@@ -31,9 +30,15 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: fill var(--anim-fast) var(--transition-func);
+    
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-    fill: var(--accent-color);
-}
+
+
+
+
+

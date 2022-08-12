@@ -14,19 +14,19 @@
     align-items: center;
     justify-content: center;
     transition: background-color var(--anim-fast) var(--transition-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+
+    &:hover .social__icon,
+    &:focus .social__icon {
+        fill: var(--icon-color-white);
+    }
 }
 
 .social__icon {
     fill: var(--icon-color-grey);
     transition: fill var(--anim-fast) var(--transition-func);
-}
-
-.social__link:hover,
-.social__link:focus {
-    background-color: var(--accent-color);
-}
-
-.social__link:hover .social__icon,
-.social__link:focus .social__icon {
-    fill: var(--icon-color-white);
 }

@@ -8,11 +8,11 @@
     padding: 32px 0;
     align-items: center;
     transition: color, var(--anim-fast) var(--transition-func);
-}
 
-.contact__link:hover,
-.contact__link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .contact__item:not(:last-child) {
